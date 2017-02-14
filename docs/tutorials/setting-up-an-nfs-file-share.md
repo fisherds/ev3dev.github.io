@@ -11,7 +11,7 @@ author: [ "@antonvh","@rhempel","JNFitzgerald" ]
 
 If you quickly want to change a little code and then run it on the robot, it's nice to have a file shared between your development pc and the ev3dev robot. That's what this tutorial accomplishes with NFS. It's also a fast and easy way to tune parameters or access log files.
 
-{% include icon.html type="info" %}
+{% include /style/icon.html type="info" %}
 This requires editing some config files and getting addresses and filenames straight. For more advanced users.
 {: .alert .alert-info}
 
@@ -24,7 +24,7 @@ More uses for a shared folder:
  * Backup your SD card. 
  * Edit files on your host machine, then run them on the EV3 without having to actually copy files anywhere!
 
-{% include screenshot.html source="/images/Website/nfs_on_ev3dev.png" %}
+{% include /util/screenshot.html source="/images/Website/nfs_on_ev3dev.png" %}
 
 The instructions here are for all three platforms Linux, Windows, and OSX - just pick the one you need 
 
@@ -159,7 +159,7 @@ And then you should be able to see the files on your host computer when you do `
 - The [OS X `showmount`][OSXshowmount] manpage
 
 [OSXServerNFSExport]: http://support.apple.com/kb/HT4695
-[BarryODonavanNFS]: http://www.barryodonovan.com/index.php/2012/12/12/apple-os-x-as-an-nfs-server-with-linux-clients
+[BarryODonavanNFS]: https://www.barryodonovan.com/2012/12/12/apple-os-x-as-an-nfs-server-with-linux-clients
 [linuxexports5]:  http://linux.die.net/man/5/exports
 [linuxexportfs8]: http://linux.die.net/man/8/exportfs
 [OSXexports5]: http://www.manpages.info/macosx/exports.5.html
